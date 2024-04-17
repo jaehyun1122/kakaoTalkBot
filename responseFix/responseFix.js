@@ -1,7 +1,7 @@
 function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
   let time = Date.now();
-  let roomid = 1234567890;
-  let senderid = 1234567890;
+  let roomid = '1234567890';
+  let senderid = '1234567890';
   let isMultiChat = 0;
   let isMention = false;
   let unread = '1개의 안 읽은 메시지';
