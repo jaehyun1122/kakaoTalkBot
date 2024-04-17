@@ -1,4 +1,4 @@
-## responseFix
+## responseFix info
 - MIT License
 - original copyright (c) https://github.com/naijun0403
 - copyright (c) jaehyun1122
