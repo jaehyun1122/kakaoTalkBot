@@ -4,7 +4,7 @@
 - copyright (c) jaehyun1122
 
 ## responseFix List
-responseFix(room, msg, sender, isGroupChat, replier, imageDB, packageName, time, roomid, senderid, isMultiChat, isMention, unread);
+responseFix(room, msg, sender, isGroupChat, replier, imageDB, packageName, time, roomid, senderid, isMultiChat, isMention, unread)
 - room : 채팅방이름
 - msg : 메시지내용
 - sender : 유저이름
