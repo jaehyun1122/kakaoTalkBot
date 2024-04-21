@@ -1,5 +1,10 @@
 function tossBank(time, type, user, cash) {
-  
+  /**
+  time : 수신일시
+  type : 입금 ? 출금
+  user : 수신유저이름
+  cash : 수신금액
+  **/
 }
 
 function onNotificationPosted(sbn, sm) {
@@ -21,3 +26,9 @@ function onNotificationPosted(sbn, sm) {
     }
   }
 }
+
+/**
+MIT License
+Copyright (c) 2024/04/18 https://github.com/jaehyun1122
+
+**/
