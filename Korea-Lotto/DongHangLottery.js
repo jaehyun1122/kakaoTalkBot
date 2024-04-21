@@ -29,7 +29,7 @@ function response(room, msg, sender, isGroupChat, replier, imageDB, packageName,
       ].join('\n'));
       return;
     }
-    let round = msg.substr(prefix.length+5);
+    let round = msg.substr(prefix.length+5).replace(/\D/g,'');
     let site = org.jsoup.Jsoup.connect('https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo='+round).get().text();
     let result = JSON.parse(site);
     if(result.returnValue == 'fail') {
