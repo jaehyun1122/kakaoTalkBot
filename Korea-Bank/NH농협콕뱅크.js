@@ -26,3 +26,9 @@ function onNotificationPosted(sbn, sm) {
     }
   }
 }
+
+/**
+MIT License
+Copyright (c) 2024/04/18 https://github.com/jaehyun1122
+
+**/
