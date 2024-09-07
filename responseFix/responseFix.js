@@ -5,9 +5,10 @@ function response(room, msg, sender, isGroupChat, replier, imageDB, packageName)
   let isMultiChat = 0;
   let isMention = false;
   let unread = '1개의 안 읽은 메시지';
+  let isImage = false;
   if(isDebugChat(replier)) {
     if(this.hasOwnProperty('responseFix')) {
-      responseFix(room, msg, sender, isGroupChat, replier, imageDB, packageName, time, roomid, senderid, isMultiChat, isMention, unread);
+      responseFix(room, msg, sender, isGroupChat, replier, imageDB, packageName, time, roomid, senderid, isMultiChat, isMention, isImage, unread);
     }
   }
 }
@@ -53,9 +54,10 @@ function onNotificationPosted(sbn, sm) {
       let senderid = bundle.get('android.messages')[0].get('sender_person').getKey();
       let isMultiChat = sbn.getUser().hashCode();
       let isMention = bundle.get('android.text') instanceof android.text.SpannableString;
+      let isImage = sbn.getNotification().hasImage();
       com.xfl.msgbot.application.service.NotificationListener.Companion.setSession(packageName, /*actions.find(v => v.remoteInputs)*/room, action);
       if(this.hasOwnProperty('responseFix')) {
-        responseFix(room, msg, sender, isGroupChat, replier, imageDB, packageName, time, roomid, senderid, isMultiChat, isMention, unread);
+        responseFix(room, msg, sender, isGroupChat, replier, imageDB, packageName, time, roomid, senderid, isMultiChat, isMention, isImage, unread);
       }
     }
   }
