@@ -1,4 +1,4 @@
-const scriptName = '1';
+const scriptName = '';
 
 let prefix = '!';
 let all = '\u200b'.repeat(500);
